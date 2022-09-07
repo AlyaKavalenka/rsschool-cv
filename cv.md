@@ -1,4 +1,4 @@
-# Alina Kavalenka <p>Junior trainee developer</p>
+# Alina Kavalenka 
 ## Contact info
 
 [Linkedin](https://www.linkedin.com/in/alina-kavalenka-aa8979180/)  
