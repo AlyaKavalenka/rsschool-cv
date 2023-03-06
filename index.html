@@ -8,55 +8,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
-    <div class="body__body-wrapper">
+    <div class="body__wrapper">
       <header class="header">
         <div class="header__image-wrapper">
           <img class="header__image" src="image/myphoto.jpg" alt="my photo" />
         </div>
         <div class="header__cv-title-wrapper">
           <h1 class="header__name">Alina Kavalenka</h1>
-          <div class="header__major">Junior JavaScript Developer</div>
+          <span class="header__major">
+            Junior Front-end Developer (JavaScript)
+          </span>
         </div>
       </header>
       <main class="main">
-        <div class="mainContainer">
-          <div class="leftSide">
-            <div class="contacts">
-              <h3>Contact me</h3>
-              <div class="leftContainerText">Email: kovalenkoalinam@gmail.com</div>
-              <div class="leftContainerText">
+        <article class="left-block">
+          <section class="left-block__container">
+            <h3>Contact me</h3>
+            <ul class="contacts__list">
+              <li class="contacts__text">Email: kovalenkoalinam@gmail.com</li>
+              <li class="contacts__text">
                 Discord: Alya Kavalenka (@alyakavalenka)
-              </div>
-              <div class="leftContainerText">
+              </li>
+              <li class="contacts__text">
                 <a href="https://www.linkedin.com/in/alina-kavalenka-aa8979180/"
                   >Linkedin</a
                 >
-              </div>
-              <div class="leftContainerText">
+              </li>
+              <li class="contacts__text">
                 <a href="https://github.com/AlyaKavalenka">GitHub</a>
-              </div>
-            </div>
-            <div class="languages">
-              <table>
-                <h3>Languages</h3>
-                <tr>
-                  <td>English</td>
-                  <td>Pre-Intermidiate</td>
-                </tr>
-                <tr>
-                  <td>Russian</td>
-                  <td>native</td>
-                </tr>
-                <tr>
-                  <td>French</td>
-                  <td>beginner</td>
-                </tr>
-                <tr>
-                  <td>Italian</td>
-                  <td>beginner</td>
-                </tr>
-              </table>
-            </div>
+              </li>
+            </ul>
+          </section>
+          <section class="left-block__container">
+            <h3>Languages</h3>
+            <table>
+              <tr>
+                <td>English</td>
+                <td>Pre-Intermidiate</td>
+              </tr>
+              <tr>
+                <td>Russian</td>
+                <td>native</td>
+              </tr>
+              <tr>
+                <td>French</td>
+                <td>beginner</td>
+              </tr>
+              <tr>
+                <td>Italian</td>
+                <td>beginner</td>
+              </tr>
+            </table>
+          </section>
+          <section class="left-block__container">
             <h3>Skills</h3>
             <ul>
               <li>HTML</li>
@@ -67,57 +71,60 @@
               <li>IntelliJ IDEA</li>
               <li>VS Code</li>
             </ul>
+          </section>
+          <section class="left-block__container">
             <h3>Work experience, projects</h3>
-            <div class="leftContainerText">to be added in the future...</div>
-          </div>
-    
-          <div class="rightSide">
-            <h3>About me</h3>
-            <ul>
-              <li>
-                <b>Working in the IT is my dream.</b> I have been interested in
-                programming since school, but it was decided to enroll in the
-                Faculty of Economics.
-              </li>
-              <li>After university, I went to work for an insurance company.</li>
-              <li>
-                During those 2 years <b>I gained</b> a lot of experience, for
-                example:
-                <b
-                  >working in stressful situations, communicating with clients,
-                  working in a team, searching and analyzing a large amount of data,
-                  and much more.</b
-                >
-                But I realized that it wasn't mine.
-              </li>
-              <li>I decided to start my journey with front-end development.</li>
-              <li>
-                I am constantly striving for self-study. I'm quick-learning,
-                ambitious and highly motivated person.
-                <b
-                  >I approach the tasks assigned to me responsibly and with
-                  enthusiasm.</b
-                >
-                I like to look for new ways to solve the same problem.
-              </li>
-            </ul>
-            <h3>Education</h3>
-            <ul>
-              <li>
-                2016-2020 Polessky State University: Economics and finance faculty
-              </li>
-              <li>
-                2020-2022 HTML Academy Practicum "Start in the front-end",
-                "Immersion in layout", "Immersion in JavaScript"
-              </li>
-              <li>
-                2022-2023 RS Schools Course "JavaScript/Front-end" (in progress)
-              </li>
-            </ul>
-            <h3>Code Example</h3>
-            <div class="code">
-              <code>
-                <pre>
+            <span>to be added in the future...</span>
+          </section>
+        </article>
+
+        <section class="right-block">
+          <h3>About me</h3>
+          <ul>
+            <li>
+              <b>Working in the IT is my dream.</b> I have been interested in
+              programming since school, but it was decided to enroll in the
+              Faculty of Economics.
+            </li>
+            <li>After university, I went to work for an insurance company.</li>
+            <li>
+              During those 2 years <b>I gained</b> a lot of experience, for
+              example:
+              <b
+                >working in stressful situations, communicating with clients,
+                working in a team, searching and analyzing a large amount of
+                data, and much more.</b
+              >
+              But I realized that it wasn't mine.
+            </li>
+            <li>I decided to start my journey with front-end development.</li>
+            <li>
+              I am constantly striving for self-study. I'm quick-learning,
+              ambitious and highly motivated person.
+              <b
+                >I approach the tasks assigned to me responsibly and with
+                enthusiasm.</b
+              >
+              I like to look for new ways to solve the same problem.
+            </li>
+          </ul>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              2016-2020 Polessky State University: Economics and finance faculty
+            </li>
+            <li>
+              2020-2022 HTML Academy Practicum "Start in the front-end",
+              "Immersion in layout", "Immersion in JavaScript"
+            </li>
+            <li>
+              2022-2023 RS Schools Course "JavaScript/Front-end" (in progress)
+            </li>
+          </ul>
+          <h3>Code Example</h3>
+          <div class="code">
+            <code>
+              <pre>
     function solution(number){
         let sum = 0;
         for (let i = 1; i < number; i++){
@@ -128,11 +135,10 @@
         return sum;
     }
     </pre
-                >
-              </code>
-            </div>
+              >
+            </code>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   </body>
