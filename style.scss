@@ -68,18 +68,20 @@ $text-color: rgba($grey, .9);
 }
 
 .main {
-  display: flex;
-
   border: 2px solid rgba($grey, .02);
   border-top: 0;
   border-radius: 5px;
+
+  &__two-blocks-wrapper {
+    display: flex;
+  }
 }
 
 .left-block {
   padding-right: 0.7rem;
 
   background-color: rgba($grey, .2);
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
