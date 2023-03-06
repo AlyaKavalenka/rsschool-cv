@@ -154,3 +154,8 @@ $text-color: rgba($grey, .9);
 
   border-spacing: 7px;
 }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
