@@ -76,18 +76,20 @@
   white-space: nowrap;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin: 2px 0 0 10px;
   padding: 0;
   list-style-type: none;
 }
 .contacts__text {
   position: relative;
   display: block;
-  padding: 10px;
+  padding: 4px 11px;
   border-radius: 7px;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .contacts__text:hover {
+  padding: 10px 11px;
   background-color: rgba(162, 162, 162, 0.3);
 }
 .contacts__link {
@@ -96,7 +98,8 @@
 }
 .contacts__svg {
   position: absolute;
-  top: 3px;
+  bottom: auto;
+  top: auto;
   padding-left: 5px;
   transform: scale(0.7);
 }/*# sourceMappingURL=style.css.map */
