@@ -146,3 +146,11 @@ $text-color: rgba($grey, .9);
     transform: scale(.7);
   }
 }
+
+.languages {
+  text-transform: capitalize;
+
+  margin-left: 1rem;
+
+  border-spacing: 7px;
+}

@@ -107,4 +107,10 @@
   top: auto;
   padding-left: 5px;
   transform: scale(0.7);
+}
+
+.languages {
+  text-transform: capitalize;
+  margin-left: 1rem;
+  border-spacing: 7px;
 }/*# sourceMappingURL=style.css.map */
