@@ -55,7 +55,17 @@
 }
 
 .left-block {
+  padding-right: 0.7rem;
   background-color: rgba(68, 68, 68, 0.2);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 2px;
+}
+
+.h3 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0;
+  padding: 1rem 0.2rem 0.5rem 0.8rem;
+  border-bottom: 2px solid rgba(68, 68, 68, 0.5);
 }/*# sourceMappingURL=style.css.map */
