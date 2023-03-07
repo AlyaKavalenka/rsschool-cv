@@ -17,6 +17,7 @@
 .header {
   background-color: #444444;
   display: flex;
+  align-items: center;
   gap: 7vw;
 }
 .header__image-wrapper {

@@ -27,6 +27,7 @@ $text-color: rgba($grey, .9);
   background-color: $grey;
 
   display: flex;
+  align-items: center;
   gap: 7vw;
 
   &__image-wrapper {
