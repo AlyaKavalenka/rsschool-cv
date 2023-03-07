@@ -64,7 +64,10 @@
 .header__download-svg {
   width: 23px;
   padding: 5px;
-  fill: rgb(255, 255, 255);
+  fill: #C68F62;
+}
+.header__download-svg:hover {
+  fill: #DD9A62;
 }
 
 .main {
@@ -111,7 +114,11 @@
 }
 .contacts__text:hover {
   padding: 10px 11px;
-  background-color: rgba(162, 162, 162, 0.3);
+  background-color: rgba(246, 236, 227, 0.3);
+  color: #905320;
+}
+.contacts__text:hover .contacts__svg {
+  fill: #905320;
 }
 .contacts__link {
   position: absolute;
@@ -126,7 +133,9 @@
   bottom: auto;
   top: auto;
   padding-left: 5px;
+  fill: #C68F62;
   transform: scale(0.7);
+  transition: all 0.5s;
 }
 
 .languages {

@@ -2,6 +2,9 @@
 
 $grey: #444444;
 $text-color: rgba($grey, .9);
+$left-block-text-color-hover: #905320;
+$svg-color: #C68F62;
+$hover-bg: rgba(#F6ECE3, $alpha: .3);
 
 .body {
   font-family: 'Roboto', sans-serif;
@@ -89,7 +92,11 @@ $text-color: rgba($grey, .9);
     width: 23px;
     padding: 5px;
 
-    fill: rgb(255, 255, 255);
+    fill: $svg-color;
+
+    &:hover {
+      fill: #DD9A62;
+    }
   }
 }
 
@@ -150,7 +157,12 @@ $text-color: rgba($grey, .9);
     &:hover {
       padding: 10px 11px;
 
-      background-color: rgba(#A2A2A2, $alpha: .3);
+      background-color: $hover-bg;
+      color: $left-block-text-color-hover;
+
+      .contacts__svg {
+        fill: $left-block-text-color-hover;
+      }
     }
   }
 
@@ -171,7 +183,10 @@ $text-color: rgba($grey, .9);
 
     padding-left: 5px;
 
+    fill: $svg-color;
+
     transform: scale(.7);
+    transition: all .5s;
   }
 }
 
