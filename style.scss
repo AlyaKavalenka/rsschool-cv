@@ -169,17 +169,31 @@ $text-color: rgba($grey, .9);
 
   &__link {
     max-width: 20%;
-    max-height: 130px;
+    max-height: 140px;
 
     border-radius: 15px;
 
     overflow: hidden;
+
+    transition: all .5s;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 
   &__image {
     width: 100%;
     height: 100%;
 
+    filter: contrast(.5) brightness(.8);
+
     object-fit: cover;
+
+    transition: all .5s;
+
+    &:hover {
+      filter: contrast(1) brightness(1);
+    }
   }
 }
