@@ -79,6 +79,18 @@ $text-color: rgba($grey, .9);
     font-weight: 100;
     font-size: 1rem;
   }
+
+  &__download {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  &__download-svg {
+    width: 23px;
+    padding: 5px;
+
+    fill: rgb(255, 255, 255);
+  }
 }
 
 .main {

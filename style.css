@@ -57,6 +57,15 @@
   font-weight: 100;
   font-size: 1rem;
 }
+.header__download {
+  display: flex;
+  align-self: flex-start;
+}
+.header__download-svg {
+  width: 23px;
+  padding: 5px;
+  fill: rgb(255, 255, 255);
+}
 
 .main {
   border: 2px solid rgba(68, 68, 68, 0.02);
