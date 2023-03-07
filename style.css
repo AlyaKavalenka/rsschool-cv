@@ -9,7 +9,7 @@
   color: rgba(68, 68, 68, 0.9);
 }
 .body__wrapper {
-  max-width: 1030px;
+  max-width: 890px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -20,8 +20,8 @@
   gap: 7vw;
 }
 .header__image-wrapper {
-  width: 200px;
-  margin: 1.5rem;
+  width: 180px;
+  margin: 0.5rem 1rem;
 }
 .header__image {
   width: 100%;
@@ -29,6 +29,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(0.8) grayscale(0.5);
+  transition: all 0.5s;
+}
+.header__image:hover {
+  border-radius: 5px;
+  scale: 1.1;
+  filter: none;
 }
 .header__cv-title-wrapper {
   font-size: 1.5rem;
@@ -157,6 +163,7 @@
 .projects__name {
   position: absolute;
   top: 0;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;

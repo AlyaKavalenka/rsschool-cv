@@ -15,7 +15,7 @@ $text-color: rgba($grey, .9);
   color: $text-color;
 
   &__wrapper {
-    max-width: 1030px;
+    max-width: 890px;
 
     border-radius: 5px;
 
@@ -30,8 +30,8 @@ $text-color: rgba($grey, .9);
   gap: 7vw;
 
   &__image-wrapper {
-    width: 200px;
-    margin: 1.5rem;
+    width: 180px;
+    margin: .5rem 1rem;
   }
 
   &__image {
@@ -42,6 +42,16 @@ $text-color: rgba($grey, .9);
     object-fit: cover;
 
     filter: brightness(.8) grayscale(.5);
+
+    transition: all .5s;
+
+    &:hover {
+      border-radius: 5px;
+
+      scale: 1.1;
+
+      filter: none;
+    }
   }
 
   &__cv-title-wrapper {
@@ -209,6 +219,8 @@ $text-color: rgba($grey, .9);
   &__name {
     position: absolute;
     top: 0;
+
+    text-align: center;
 
     display: flex;
     justify-content: center;
