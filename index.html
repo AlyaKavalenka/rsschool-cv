@@ -1,96 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="nameAndPhoto">
-        <img src="image/myphoto.jpg" alt="альтернативный текст">
-        <div class="nameAndProff">            
-            <div>ALINA KAVALENKA</div>
-            <div class="proff">Junior JavaScript Developer</div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="body__wrapper">
+      <header class="header">
+        <div class="header__image-wrapper">
+          <img class="header__image" src="./assets/image/myphoto.jpg" alt="my photo" />
         </div>
-    </div>
-
-    <div class="mainContainer">
-        <div class="leftSide">
-            <div class="contacts">
-                <h3>Contact me</h3>
-                <div class="leftContainerText">Email: kovalenkoalinam@gmail.com</div> 
-                <div class="leftContainerText">Discord: Alya Kavalenka (@alyakavalenka)</div>   
-                <div class="leftContainerText"><a href="https://www.linkedin.com/in/alina-kavalenka-aa8979180/">Linkedin</a></div>
-                <div class ="leftContainerText"><a href="https://github.com/AlyaKavalenka">GitHub</a></div>
-            </div>
-            <div class="languages">
-                <table>
-                    <h3>Languages</h3>
-                    <tr>
-                        <td>English</td>
-                        <td>Pre-Intermidiate</td>
-                    </tr>
-                    <tr>
-                        <td>Russian</td>
-                        <td>native</td>
-                    </tr>
-                    <tr>
-                        <td>French</td>
-                        <td>beginner</td>
-                    </tr>
-                    <tr>
-                        <td>Italian</td>
-                        <td>beginner</td>
-                    </tr>
-                </table>
-            </div>
-            <h3>Skills</h3>
-            <ul>
+        <div class="header__cv-title-wrapper">
+          <h1 class="header__name">Alina Kavalenka</h1>
+          <span class="header__major">
+            Junior Front-end Developer (JavaScript)
+          </span>
+        </div>
+        <div class="header__download">
+          <a href="./assets/docs/Resume_Kavalenka_Alina.pdf" class="header__download-link" download>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="header__download-svg"><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H296 272 184 160c-35.3 0-64 28.7-64 64v80 48 16H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM160 352h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm88-80h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm24 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96h8zm72-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"/></svg>
+          </a>
+          <a href="./assets/docs/Resume_Kavalenka_Alina.docx" class="header__download-link" download>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="header__download-svg"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM111 257.1l26.8 89.2 31.6-90.3c3.4-9.6 12.5-16.1 22.7-16.1s19.3 6.4 22.7 16.1l31.6 90.3L273 257.1c3.8-12.7 17.2-19.9 29.9-16.1s19.9 17.2 16.1 29.9l-48 160c-3 10-12.1 16.9-22.4 17.1s-19.8-6.2-23.2-16.1L192 336.6l-33.3 95.3c-3.4 9.8-12.8 16.3-23.2 16.1s-19.5-7.1-22.4-17.1l-48-160c-3.8-12.7 3.4-26.1 16.1-29.9s26.1 3.4 29.9 16.1z"/></svg>
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__two-blocks-wrapper">
+          <article class="left-block">
+            <section class="left-block__container">
+              <h3 class="h3">Contact me</h3>
+              <ul class="contacts__list">
+                <li class="contacts__text">Email: kovalenkoalinam@gmail.com</li>
+                <li class="contacts__text">
+                  Discord: Alya Kavalenka (@alyakavalenka)
+                </li>
+                <li class="contacts__text">
+                  <a
+                    href="https://www.linkedin.com/in/alina-kavalenka-aa8979180/"
+                    class="contacts__link"
+                    target="_blank"
+                  ></a>
+                  <span>Linkedin</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="contacts__svg"
+                  >
+                    <path
+                      d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"
+                    />
+                  </svg>
+                </li>
+                <li class="contacts__text">
+                  <a
+                    href="https://github.com/AlyaKavalenka"
+                    class="contacts__link"
+                    target="_blank"
+                  ></a>
+                  <span>GitHub</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="contacts__svg"
+                  >
+                    <path
+                      d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </section>
+            <section class="left-block__container">
+              <h3 class="h3">Languages</h3>
+              <table class="languages">
+                <tr>
+                  <td>English</td>
+                  <td>Intermediate</td>
+                </tr>
+                <tr>
+                  <td>Russian</td>
+                  <td>native</td>
+                </tr>
+              </table>
+            </section>
+            <section class="left-block__container">
+              <h3 class="h3">Skills</h3>
+              <ul class="skills">
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JS</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>React</li>
                 <li>Git/GitHub</li>
-                <li>IntelliJ IDEA</li>
                 <li>VS Code</li>
+                <li>Webpack</li>
+                <li>Eslint</li>
+              </ul>
+            </section>
+          </article>
+
+          <section class="right-block">
+            <h3 class="h3">About me</h3>
+            <ul>
+              <li>
+                <b>Working in the IT is my dream.</b> I have been interested in
+                programming since school, but it was decided to enroll in the
+                Faculty of Economics.
+              </li>
+              <li>
+                After university, I went to work for an insurance company.
+              </li>
+              <li>
+                During those 2 years in insurance company <b>I gained</b> a lot
+                of experience, for example:
+                <b
+                  >working in stressful situations, communicating with clients,
+                  working in a team, searching and analyzing a large amount of
+                  data, and much more.</b
+                >
+                But I realized that it wasn't mine.
+              </li>
+              <li>I decided to start my journey with front-end development.</li>
+              <li>
+                I am constantly striving for self-study. I'm quick-learning,
+                ambitious and highly motivated person.
+                <b
+                  >I approach the tasks assigned to me responsibly and with
+                  enthusiasm.</b
+                >
+                I like to look for new ways to solve the same problem.
+              </li>
             </ul>
-            <h3>Work experience, projects</h3>
-            <div class="leftContainerText">to be added in the future...</div> 
+            <h3 class="h3">Education</h3>
+            <ul>
+              <li>
+                2016-2020 Polessky State University: Economics and finance
+                faculty
+              </li>
+              <li>
+                2020-2022 HTML Academy Practicum "Start in the front-end",
+                "Immersion in layout", "Immersion in JavaScript"
+              </li>
+              <li>2022-2023 RS Schools Course "JavaScript/Front-end"</li>
+              <li>
+                2023-2023 RS Schools Course "React" (in progress until June,
+                2023)
+              </li>
+            </ul>
+          </section>
         </div>
-        
-        <div class="rightSide">
-            <h3>About me</h3>
-                <ul>
-                    <li><b>Working in the IT is my dream.</b> I have been interested in programming since school, but it was decided to enroll in the Faculty of Economics.</li>
-                    <li>After university, I went to work for an insurance company.</li>
-                    <li>During those 2 years <b>I gained</b> a lot of experience, for example: <b>working in stressful situations, communicating with clients, working in a team, searching and analyzing a large amount of data, and much more.</b> But I realized that it wasn't mine.</li>
-                    <li>I decided to start my journey with front-end development.</li>
-                    <li>I am constantly striving for self-study. I'm quick-learning, ambitious and highly motivated person. <b>I approach the tasks assigned to me responsibly and with enthusiasm.</b> I like to look for new ways to solve the same problem.</li>
-                </ul>
-            <h3>Education</h3>
-                <ul>
-                    <li>2016-2020 Polessky State University: Economics and finance faculty</li>
-                    <li>2020-2022 HTML Academy Practicum  "Start in the front-end", "Immersion in layout", "Immersion in JavaScript"</li>
-                    <li>2022-2023 RS Schools Course "JavaScript/Front-end" (in progress)</li>
-                </ul>
-                <h3>Code Example</h3>
-                <div class="code">
-<code><pre>
-function solution(number){
-    let sum = 0;
-    for (let i = 1; i < number; i++){
-        if (i % 3 == 0 || i % 5 == 0) {
-            sum += i;
-        }
-    }
-    return sum;
-}
-</pre></code>
-                </div>
-        </div>
-    </div>    
+
+        <section class="main__projects">
+          <h3 class="h3">Work experience, projects</h3>
+          <div class="projects">
+            <a
+              href="https://rolling-scopes-school.github.io/alyakavalenka-JSFE2022Q3/rss-gem-puzzle/"
+              class="projects__link"
+              target="_blank"
+            >
+              <img
+                src="./assets/image/gem-puzzle.png"
+                alt="preview project"
+                class="projects__image"
+              />
+              <h2 class="projects__name">Gem Puzzle</h2>
+            </a>
+            <a
+              href="https://rolling-scopes-school.github.io/alyakavalenka-JSFE2022Q3/songbird/"
+              class="projects__link"
+              target="_blank"
+            >
+              <img
+                src="./assets/image/songbird.png"
+                alt="preview project"
+                class="projects__image"
+              />
+              <h2 class="projects__name">SongBird</h2>
+            </a>
+            <a
+              href="https://ulianasavi-alyakavalenka-online-store.netlify.app/"
+              class="projects__link"
+              target="_blank"
+            >
+              <img
+                src="./assets/image/online-store.png"
+                alt="preview project"
+                class="projects__image"
+              />
+              <h2 class="projects__name">Online Store</h2>
+            </a>
+            <a
+              href="https://telegram-rs-clone.netlify.app/register"
+              class="projects__link"
+              target="_blank"
+            >
+              <img
+                src="./assets/image/telegram-clone.png"
+                alt="preview project"
+                class="projects__image"
+              />
+              <h2 class="projects__name">Telegram Clone</h2>
+            </a>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>
