@@ -128,6 +128,7 @@
   padding: 20px;
 }
 .projects__link {
+  position: relative;
   max-width: 20%;
   max-height: 140px;
   border-radius: 15px;
@@ -137,6 +138,12 @@
 .projects__link:hover {
   scale: 1.1;
 }
+.projects__link:hover .projects__image {
+  filter: contrast(1) brightness(1);
+}
+.projects__link:hover .projects__name {
+  color: white;
+}
 .projects__image {
   width: 100%;
   height: 100%;
@@ -145,6 +152,15 @@
      object-fit: cover;
   transition: all 0.5s;
 }
-.projects__image:hover {
-  filter: contrast(1) brightness(1);
+.projects__name {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */
