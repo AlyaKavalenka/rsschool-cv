@@ -2,13 +2,14 @@
 .body {
   font-family: "Roboto", sans-serif;
   font-size: medium;
+  line-height: 1.257;
   display: flex;
   justify-content: center;
   margin: 0;
   color: rgba(68, 68, 68, 0.9);
 }
 .body__wrapper {
-  max-width: 1200px;
+  max-width: 1030px;
   border-radius: 5px;
   overflow: hidden;
 }

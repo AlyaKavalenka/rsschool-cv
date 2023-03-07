@@ -6,6 +6,7 @@ $text-color: rgba($grey, .9);
 .body {
   font-family: 'Roboto', sans-serif;
   font-size: medium;
+  line-height: 1.257;
 
   display: flex;
   justify-content: center;
@@ -14,7 +15,7 @@ $text-color: rgba($grey, .9);
   color: $text-color;
 
   &__wrapper {
-    max-width: 1200px;
+    max-width: 1030px;
 
     border-radius: 5px;
 
