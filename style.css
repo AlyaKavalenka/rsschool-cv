@@ -8,9 +8,21 @@
   margin: 0;
   color: rgba(68, 68, 68, 0.9);
 }
+@media (max-width: 730px) {
+  .body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 550px) {
+  .body {
+    font-size: 0.8rem;
+  }
+}
 .body__wrapper {
   max-width: 890px;
   border-radius: 5px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   overflow: hidden;
 }
 
@@ -45,6 +57,26 @@
   width: 100%;
   color: white;
 }
+@media (max-width: 730px) {
+  .header__cv-title-wrapper {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 620px) {
+  .header__cv-title-wrapper {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .header__cv-title-wrapper {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 470px) {
+  .header__cv-title-wrapper {
+    font-size: 0.7rem;
+  }
+}
 .header__name {
   font-weight: normal;
   -webkit-margin-before: 0;
@@ -52,6 +84,11 @@
   -webkit-margin-after: 0;
           margin-block-end: 0;
   text-transform: uppercase;
+}
+@media (max-width: 470px) {
+  .header__name {
+    font-size: 1rem;
+  }
 }
 .header .major {
   font-weight: 100;
@@ -72,12 +109,23 @@
 
 .main {
   position: relative;
-  border: 2px solid rgba(68, 68, 68, 0.02);
+  border: 1px solid rgba(68, 68, 68, 0.02);
   border-top: 0;
   border-radius: 5px;
 }
+@media (max-width: 550px) {
+  .main {
+    border: none;
+  }
+}
 .main__two-blocks-wrapper {
   display: flex;
+}
+@media (max-width: 550px) {
+  .main__two-blocks-wrapper {
+    flex-direction: column;
+    border: none;
+  }
 }
 
 .left-block {
@@ -96,6 +144,12 @@
   border-bottom: 2px solid rgba(68, 68, 68, 0.5);
   color: black;
 }
+@media (max-width: 550px) {
+  .h3 {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.1rem 0.4rem 0.7rem;
+  }
+}
 
 .contacts__list {
   white-space: nowrap;
@@ -104,6 +158,11 @@
   margin: 2px 0 0 10px;
   padding: 0;
   list-style-type: none;
+}
+@media (max-width: 730px) {
+  .contacts__list {
+    white-space: normal;
+  }
 }
 .contacts__text {
   position: relative;
@@ -137,6 +196,13 @@
   fill: #C68F62;
   transform: scale(0.7);
   transition: all 0.5s;
+}
+@media (max-width: 550px) {
+  .contacts__svg {
+    top: 2%;
+    padding-left: 1px;
+    transform: scale(0.5);
+  }
 }
 
 .languages {
@@ -192,6 +258,11 @@
   height: 100%;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.5s;
+}
+@media (max-width: 445px) {
+  .projects__name {
+    font-size: 0.8rem;
+  }
 }
 
 .popup {

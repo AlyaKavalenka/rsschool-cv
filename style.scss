@@ -17,10 +17,20 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
 
   color: $text-color;
 
+  @media (max-width: 730px) {
+    font-size: .9rem;
+  }
+
+  @media (max-width: 550px) {
+    font-size: .8rem;
+  }
+
   &__wrapper {
     max-width: 890px;
 
     border-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 
     overflow: hidden;
   }
@@ -67,6 +77,22 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
     width: 100%;
 
     color: white;
+
+    @media (max-width: 730px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 620px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 550px) {
+      font-size: .8rem;
+    }
+
+    @media (max-width: 470px) {
+      font-size: .7rem;
+    }
   }
 
   &__name {
@@ -76,6 +102,10 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
     margin-block-end: 0;
 
     text-transform: uppercase;
+
+    @media (max-width: 470px) {
+      font-size: 1rem;
+    }
   }
 
   .major {
@@ -103,12 +133,21 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
 .main {
   position: relative;
 
-  border: 2px solid rgba($grey, .02);
+  border: 1px solid rgba($grey, .02);
   border-top: 0;
   border-radius: 5px;
 
+  @media (max-width: 550px) {
+    border: none;
+  }
+
   &__two-blocks-wrapper {
     display: flex;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+      border: none;
+    }
   }
 }
 
@@ -130,6 +169,12 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
 
   border-bottom: 2px solid rgba($grey, .5);
   color: black;
+
+  @media (max-width: 550px) {
+    font-size: .9rem;
+
+    padding: .6rem .1rem .4rem .7rem;
+  }
 }
 
 .contacts {
@@ -142,6 +187,10 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
     padding: 0;
 
     list-style-type: none;
+
+    @media (max-width: 730px) {
+      white-space: normal;
+    }
   }
 
   &__text {
@@ -189,6 +238,14 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
 
     transform: scale(.7);
     transition: all .5s;
+
+    @media (max-width: 550px) {
+      top: 2%;
+
+      padding-left: 1px;
+
+      transform: scale(.5);
+    }
   }
 }
 
@@ -262,6 +319,10 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
     color: rgba(255, 255, 255, 0.7);
 
     transition: all .5s;
+
+    @media (max-width: 445px) {
+      font-size: .8rem;
+    }
   }
 }
 
