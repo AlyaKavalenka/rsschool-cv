@@ -101,6 +101,8 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
 }
 
 .main {
+  position: relative;
+
   border: 2px solid rgba($grey, .02);
   border-top: 0;
   border-radius: 5px;
@@ -260,5 +262,36 @@ $hover-bg: rgba(#F6ECE3, $alpha: .3);
     color: rgba(255, 255, 255, 0.7);
 
     transition: all .5s;
+  }
+}
+
+// popup
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+
+  transform: all 2s;
+
+  &__content {
+    font-weight: 600;
+    font-size: large;
+
+    margin-top: 10%;
+    padding: 15px;
+    align-self: flex-start;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $svg-color;
+    border-radius: 7px;
+
+    transform: all 2s;
   }
 }
